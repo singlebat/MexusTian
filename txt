@@ -1,0 +1,26 @@
+当你使用email to case时
+想要对生成的case和email进行加工的时候的操作
+
+email to case 的运作顺序是 1.send email 2。生成case 3.生成emailmessage，并赋予parentid =caseid
+
+
+
+trigger EmailMessageAfterUpdate on EmailMessage (after insert) {
+    for (EmailMessage newEmail : trigger.new){
+        system.debug(newEmail.ToAddress);
+		system.debug(newEmail.ParentId);
+        // check to see if it now has a ParentId
+        if(newEmail.ParentId != null){
+            Case c = [SELECT id, ContactId FROM Case WHERE Id = :newEmail.ParentId];
+            system.debug( c);
+            List<Contact> conlist=[SELECT id, Email FROM Contact WHERE Email = :newEmail.ToAddress limit 1];
+            system.debug(conlist);
+            // only update the case with the new email if the email was sent to the Email-to-case address
+            if (conlist.size()==1)
+            {
+                c.ContactId = conlist[0].id;
+	        	update c;
+            }
+        }
+    }
+}
