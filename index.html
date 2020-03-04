@@ -1,983 +1,976 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
-<head><meta name="generator" content="Hexo 3.9.0">
-  <meta charset="utf-8">
-  <meta name="google-site-verification" content="036nsNgxuH68xUABF8jrgg8Xzsti4FN8eKjWvA185C4">
-  <meta name="baidu-site-verification" content="FQRuGMvxtv">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
+<head>
 
-  
-  <title>呆呆&#39;s blog</title>
-  
-  <meta name="HandheldFriendly" content="True">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyRenBlog_favicon.ico">
-  <link rel="alternate" href="/atom.xml" title="呆呆's blog">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"23c719bec7","applicationID":"9996770","transactionName":"IVtZEkcLWVsDR0xQWgFHGA9bAFBP","queueTime":8,"applicationTime":35,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"23c719bec7",applicationID:"9996770"};window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var i=n[t]={exports:{}};e[t][0].call(i.exports,function(n){var i=e[t][1][n];return r(i||n)},i,i.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<t.length;i++)r(t[i]);return r}({1:[function(e,n,t){function r(){}function i(e,n,t){return function(){return o(e,[u.now()].concat(f(arguments)),n?null:this,t),n?void 0:this}}var o=e("handle"),a=e(4),f=e(5),c=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",d=l+"ixn-";a(p,function(e,n){s[n]=i(l+n,!0,"api")}),s.addPageAction=i(l+"addPageAction",!0),s.setCurrentRouteName=i(l+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,i="function"==typeof n;return o(d+"tracer",[u.now(),e,t],r),function(){if(c.emit((i?"":"no-")+"fn-start",[u.now(),r,i],t),i)try{return n.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],t),e}finally{c.emit("fn-end",[u.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=i(d+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){var t=e.getEntries();t.forEach(function(e){"first-paint"===e.name?c("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&c("timing",["fcp",Math.floor(e.startTime)])})}function i(e,n){var t=e.getEntries();t.length>0&&c("lcp",[t[t.length-1]])}function o(e){if(e instanceof s&&!l){var n,t=Math.round(e.timeStamp);n=t>1e12?Date.now()-t:u.now()-t,l=!0,c("timing",["fi",t,{type:e.type,fid:n}])}}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var a,f,c=e("handle"),u=e("loader"),s=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){a=new PerformanceObserver(r),f=new PerformanceObserver(i);try{a.observe({entryTypes:["paint"]}),f.observe({entryTypes:["largest-contentful-paint"]})}catch(p){}}if("addEventListener"in document){var l=!1,d=["click","keydown","mousedown","pointerdown","touchstart"];d.forEach(function(e){document.addEventListener(e,o,!1)})}}},{}],3:[function(e,n,t){function r(e,n){if(!i)return!1;if(e!==i)return!1;if(!n)return!0;if(!o)return!1;for(var t=o.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var f=navigator.userAgent,c=f.match(a);c&&f.indexOf("Chrome")===-1&&f.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}n.exports={agent:i,version:o,match:r}},{}],4:[function(e,n,t){function r(e,n){var t=[],r="",o=0;for(r in e)i.call(e,r)&&(t[o]=n(r,e[r]),o+=1);return t}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],5:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,i=t-n||0,o=Array(i<0?0:i);++r<i;)o[r]=e[n+r];return o}n.exports=r},{}],6:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function i(e){function n(e){return e&&e instanceof r?e:e?c(e,f,o):o()}function t(t,r,i,o){if(!l.aborted||o){e&&e(t,r,i);for(var a=n(i),f=v(t),c=f.length,u=0;u<c;u++)f[u].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function d(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||i(t)}function w(e,n){u(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:d,addEventListener:d,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(l.aborted=!0,s=l.backlog={})}var f="nr@context",c=e("gos"),u=e(4),s={},p={},l=n.exports=i();l.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(i.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[n]=r,r}var i=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){i.buffer([e],r),i.emit(e,n,t)}var i=e("ee").get("handle");n.exports=r,r.ee=i},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!x++){var e=E.info=NREUM.info,n=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();u(y,function(n,t){e[n]||(e[n]=t)}),c("mark",["onload",a()+E.offset],null,"api");var t=d.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function i(){"complete"===d.readyState&&o()}function o(){c("mark",["domContent",a()+E.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(f=Math.max((new Date).getTime(),f))-E.offset}var f=(new Date).getTime(),c=e("handle"),u=e(4),s=e("ee"),p=e(3),l=window,d=l.document,m="addEventListener",v="attachEvent",g=l.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:l.setImmediate,CT:clearTimeout,XHR:g,REQ:l.Request,EV:l.Event,PR:l.Promise,MO:l.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1167.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),E=n.exports={offset:f,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),e(2),d[m]?(d[m]("DOMContentLoaded",o,!1),l[m]("load",r,!1)):(d[v]("onreadystatechange",i),l[v]("onload",r)),c("mark",["firstbyte",f],null,"api");var x=0,O=e(6)},{}],"wrap-function":[function(e,n,t){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(5),a="nr@original",f=Object.prototype.hasOwnProperty,c=!1;n.exports=function(e,n){function t(e,n,t,i){function nrWrapper(){var r,a,f,c;try{a=this,r=o(arguments),f="function"==typeof t?t(r,a):t||{}}catch(u){l([u,"",[r,a,i],f])}s(n+"start",[r,a,i],f);try{return c=e.apply(a,r)}catch(p){throw s(n+"err",[r,a,p],f),p}finally{s(n+"end",[r,a,c],f)}}return r(e)?e:(n||(n=""),nrWrapper[a]=e,p(e,nrWrapper),nrWrapper)}function u(e,n,i,o){i||(i="");var a,f,c,u="-"===i.charAt(0);for(c=0;c<n.length;c++)f=n[c],a=e[f],r(a)||(e[f]=t(a,u?f+i:i,o,f))}function s(t,r,i){if(!c||n){var o=c;c=!0;try{e.emit(t,r,i,n)}catch(a){l([a,t,r,i])}c=o}}function p(e,n){if(Object.defineProperty&&Object.keys)try{var t=Object.keys(e);return t.forEach(function(t){Object.defineProperty(n,t,{get:function(){return e[t]},set:function(n){return e[t]=n,n}})}),n}catch(r){l([r])}for(var i in e)f.call(e,i)&&(n[i]=e[i]);return n}function l(n){try{e.emit("internal-error",n)}catch(t){}}return e||(e=i),t.inPlace=u,t.flag=a,t}},{}]},{},["loader"]);</script>
+    <!--<dfc-head>-->
+
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyRenBlog_favicon.ico">
-  <link rel="icon" href="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/TonyRenBlog_favicon.ico">
-  
-  <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet">
-  
-  <!-- <link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"> -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-  <link href="//cdn.bootcss.com/node-waves/0.7.5/waves.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/style.css">
-  <script>
-    function setLoadingBarProgress(num) {
-      document.getElementById('loading-bar').style.width=num+"%";
-    }
-  </script>
-  
-
-  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-<script>
-  (adsbygoogle = window.adsbygoogle || []).push({
-    google_ad_client: "ca-pub-1382646259212001",
-    enable_page_level_ads: true
-  });
+<link rel="icon" href="https://developer.salesforce.com/resources2/favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="https://developer.saleforce.com/resources2/favicon.ico" type="image/x-icon">
+<meta property="og:image" content="https://res.cloudinary.com/hy4kyit2a/image/upload/og-image.jpg" />
+<link rel="stylesheet" type="text/css" href="https://developer.salesforce.com/resources2/stylesheets/dsc-default-font.css?sv=18"/>
+<link href="//res.cloudinary.com/hy4kyit2a/image/upload/v1428517247/iphone_3_j0mhil.png" rel="apple-touch-icon-precomposed" type="image/png" />
+<link href="//res.cloudinary.com/hy4kyit2a/image/upload/v1428517247/iphone_3_j0mhil.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png" />
+<link href="//res.cloudinary.com/hy4kyit2a/image/upload/v1428517258/iphone-retina_ogf4ll.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png" />
+<link href="//res.cloudinary.com/hy4kyit2a/image/upload/v1428517265/ipad-retina_h8t1cu.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png" />
+<link href='/resource/stylesheets/holygrail.min.css' rel='stylesheet' type='text/css'/>
+<link rel="stylesheet" type="text/css" href="https://developer.salesforce.com/resources2/stylesheets/dsc-default-font.css?sv=18"/>
+<link rel="stylesheet" type="text/css" href="https://developer.salesforce.com/resources2/onetrust/stylesheet/styles.a503ad01e4fb7c085f26.css" />
+<!-- OneTrust Cookies Consent Notice start -->
+<!--This script is manually downloaded from OneTrust and uploaded to the DSC S3 bucket-->
+<!--Changes made and published through the online admin system will then require you to download and install a new copy of this package each time.-->
+<!--Read more here: https://developer.salesforce.com/resources2/onetrust/Readme.txt-->
+<script src='https://developer.salesforce.com/resources2/onetrust/script/b439fd74-1d4a-48a0-b3ee-6a86cdf4a4b8.js' type="text/javascript" charset="UTF-8"></script> 
+<!-- OptanonWrapper() runs on page load and every time user updates cookie preferences -->
+<script type="text/javascript">
+  function OptanonWrapper() {
+    // Push a oneTrust group update event to dataLayer
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({
+      event: 'OneTrustGroupsUpdated'
+    });
+  }
 </script>
+<!-- OneTrust Cookies Consent Notice end -->
 
+<!-- Commented out advertising cookie as per official email
+<script class='optanon-category-4' type='text/plain'>
+const script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = 'https://na5.thunderhead.com/one/rt/js/one-tag.js?siteKey=ONE-Y5GVDCGTF1-4089';
+$('footer').append(script);
+</script>
+-->
+
+<script type='text/javascript' src='https://developer.salesforce.com/resource/javascripts/holygrail.min.js'></script>
+<script type='text/javascript' src='https://developer.salesforce.com/resource/javascripts/search.min.js'></script>
+<link href='https://developer.salesforce.com/resource/stylesheets/search.min.css' rel="stylesheet" type="text/css" />
+<script type='text/javascript' src='https://developer.salesforce.com/resource/javascripts/custom_cookie_banner.min.js'></script>
+
+<!-- OneTrust Cookies Consent Notice end -->
+
+
+<script class='optanon-category-3' type='text/plain'> 
+    const script = document.createElement('script');
+    script.type = 'text/javascript';
+    script.src = 'https://developer.salesforce.com/resource/javascripts/opinionlabs.js';
+    $('footer').append(script);
+ </script>
+<style>
+
+.sliderContainer .in-slider-content-block a h2 {
+  font-family: DSCDefaultFontLight !important;
+}
+/*@media(max-width: 1200px){
+  #st-search-input{
+    width: 150px;
+  }
+}*/
+
+
+  #search-form{
+    margin: 0;
+  }
+  #st-search-input{
+    margin: 0;
+    height: 28px;
+    width: 150px;
+  }
+  
+  .mobileHeaderContainer.on-mobile .headerButtonsContainer {
+    margin-bottom: 0px !important;
+  }
+</style>
+<!--</dfc-head>-->   
+
+<link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+<link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon.png" />
+<link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-ipad.png" sizes="72x72" />
+<link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-iphone-retina.png" sizes="114x114" />
+<link rel="apple-touch-icon-precomposed" type="image/png" href="/apple-touch-icon-ipad-retina.png" sizes="144x144" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="HtyLECbA7kNuUNNgoUam77/rp/pq5uFpmC1RO6DB9RmoSlvP84QQkPGn+f9YpF2H+w5yR0ZXOJd57Cd4hOHQ2w==" />
+<title>Salesforce Developers</title>
+<base href='/docs/'>
+<script src='/resource/javascripts/docs-app-modules.min.js'></script>
+<script src='/resource/javascripts/docs-app.min.js'></script>
+<script src='/resource/javascripts/syntax-highlighter.min.js'></script>
+<link href='/resource/stylesheets/docs.min.css' rel='stylesheet' type='text/css'>
+<link href='/resource/stylesheets/syntax-highlighter.min.css' rel='stylesheet' type='text/css'>
+<meta content='!' name='fragment'>
+<meta content='224.0' name='docs_version'>
+<meta class='swiftype' content='Salesforce Developers Documentation' data-type='string' name='site_name' property='og:site_name'>
+<meta class='swiftype' content='3' data-type='integer' name='site-priority'>
+<meta content='noindex,follow,noarchive' name='robots'>
+<meta content='Case | SOAP API 開発者ガイド | Salesforce Developers' property='og:title'>
+<meta content='article' property='og:type'>
+<meta content='https://developer.salesforce.com/docs/atlas.ja-jp.222.0.api.meta/api/sforce_api_objects_case.htm' property='og:url'>
+<meta content='https://developer.salesforce.com/salesforce-header-logo.png' property='og:image'>
+<meta content='SOAP API を使用して Salesforce データを統合する堅牢なサーバ側ソリューションを構築します。ニーズに適した Web サービス記述言語 (WSDL) を選択し、組織データを強く型付けするか、任意の組織内のデータへのアクセスに使用できるようにあまり強く型付けしないかを選択します。' property='og:description'>
+
+<!--
+<PageMap>
+<DataObject type='document'>
+<Attribute name='title' value='Salesforce developer documentation'></Attribute>
+<Attribute name='language' value='en'></Attribute>
+<Attribute name='version' value='224.0'></Attribute>
+</DataObject>
+</PageMap>
+-->
+<meta content='Salesforce Developer Network: Salesforce1 Developer Resources' name='description'>
 </head>
-</html>
 <body>
-    <div id="loading-bar-wrapper">
-  <div id="loading-bar" class="pure"></div>
+<header data-swiftype-index='false'>
+  <!--<dfc-header>-->
+<!--<script type="text/javascript" src="/custom.js"></script>-->
+<div id="mobileSearchContainer">
+  <div class="searchBar">
+    <div id="newSearchContainer" data-placeholder="Search">
+      <form class="search-form">
+        <input id="st-search-input-mobile" type="text" class="st-input stype-input" placeholder="Search"/>
+        <button type="submit" class="header-st-search-button-left"></button>
+      </form>
+      <button class="clear-button">Cancel</button>
+    </div>
+  </div>
 </div>
 
-    <script>setLoadingBarProgress(20)</script>
-    <header class="l_header pure">
-	<div class='wrapper'>
-		<div class="nav-main container container--flex">
-			<a class="logo flat-box" href='/' >呆呆's blog</a>
-				<div class='menu'>
-					<ul class='h-list'>
-            
-    					
-    						<li>
-    							<a class="nav  flat-box" href="/">
-    								<i class='fas fa-home fa-fw'></i>&nbsp;主页
-  								</a>
-  							</li>
-        			
-    						<li>
-    							<a class="nav  flat-box" href="/archives/">
-    								<i class='fas fa-archive fa-fw'></i>&nbsp;归档
-  								</a>
-  							</li>
-        			
-    						<li>
-    							<a class="nav  flat-box" href="/Project">
-    								<i class='fas fa-flask fa-fw'></i>&nbsp;项目
-  								</a>
-  							</li>
-        			
-    						<li>
-    							<a class="nav  flat-box" href="/about/">
-    								<i class='fas fa-user fa-fw'></i>&nbsp;关于
-  								</a>
-  							</li>
-        			
-    						<li>
-    							<a class="nav  flat-box" href="https://renchk.github.io">
-    								<i class='fas fa-globe fa-fw'></i>&nbsp;English
-  								</a>
-  							</li>
-        			
-        		
-					</ul>
-					<div class='underline'></div>
-				</div>
-
-			
-				<div class="m_search">
-					<form name="searchform" class="form u-search-form">
-						<input type="text" class="input u-search-input" placeholder="Search" />
-						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
-					</form>
-				</div>
-			
-			<ul class='switcher h-list'>
-				
-					<li class='s-search'><a class="fas fa-search fa-fw" href='javascript:void(0)'></span></a></li>
-				
-				<li class='s-menu'><a class="fas fa-bars fa-fw" href='javascript:void(0)'></a></li>
-			</ul>
-		</div>
-
-		<div class='nav-sub container container--flex'>
-			<a class="logo flat-box"></a>
-			<ul class='switcher h-list'>
-				<li class='s-comment'><a class="fas fa-comments fa-fw" href='javascript:void(0)'></a></li>
-				<li class='s-top'><a class="fas fa-arrow-circle-up fa-fw" href='javascript:void(0)'></a></li>
-				<li class='s-toc'><a class="fas fa-list fa-fw" href='javascript:void(0)'></a></li>
-			</ul>
-		</div>
-	</div>
-</header>
-	<aside class="menu-phone">
-		<nav>
-      <ul>
-          
-              
-                  <li>
-										<a class="nav  flat-box" href="/">
-											<i class='fas fa-home fa-fw'></i>&nbsp;主页
-										</a>
-                  </li>
-              
-                  <li>
-										<a class="nav  flat-box" href="/archives/">
-											<i class='fas fa-archive fa-fw'></i>&nbsp;归档
-										</a>
-                  </li>
-              
-                  <li>
-										<a class="nav  flat-box" href="/Project">
-											<i class='fas fa-flask fa-fw'></i>&nbsp;项目
-										</a>
-                  </li>
-              
-                  <li>
-										<a class="nav  flat-box" href="/about/">
-											<i class='fas fa-user fa-fw'></i>&nbsp;关于
-										</a>
-                  </li>
-              
-                  <li>
-										<a class="nav  flat-box" href="https://renchk.github.io">
-											<i class='fas fa-globe fa-fw'></i>&nbsp;English
-										</a>
-                  </li>
-              
-       
-      </ul>
-		</nav>
-	</aside>
-
-    <script>setLoadingBarProgress(40);</script>
-    <div class="l_body">
-    <div class='container clearfix'>
-        <div class='l_main'>
-            
-
-<section class="post-list">
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/09/12/2019-09-12-JsforceMetadata/">
-                
-                    JSforce-metadata-tools 使用refresh Token登入Salesforce
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-09-12
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>jsforce-metadata-tools</p>
-        
-            <div class="readmore">
-                <a href="/2019/09/12/2019-09-12-JsforceMetadata/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/Jsforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Jsforce</a>
-                
-                    <a href="/tags/metadata/"><i class="fas fa-tag fa-fw"></i>&nbsp;metadata</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/09/01/2019-09-01-Trailhead/">
-                
-                    Trailhead 相关资料和答案
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-09-01
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>【Trailhead】App Customization Lite答案<br>【Trailhead】Account Data Strategies答案<br>【Trailhead】Artificial Intelligence Basics 答案<br>【Trailhead】API Basics答案</p>
-        
-            <div class="readmore">
-                <a href="/2019/09/01/2019-09-01-Trailhead/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/Trailhead/"><i class="fas fa-tag fa-fw"></i>&nbsp;Trailhead</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/04/02/2019-04-02-LibraryNPM/">
-                
-                    Library NPM 软件安装包
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-04-02
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/JavaScript/">JavaScript</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>软件安装包</p>
-        
-            <div class="readmore">
-                <a href="/2019/04/02/2019-04-02-LibraryNPM/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/JavaScript/"><i class="fas fa-tag fa-fw"></i>&nbsp;JavaScript</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/03/18/2019-03-18-Quip/">
-                
-                    Quip相关资料
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-03-18
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>【Trailhead】如何在Quip中打开Salesforce报表？</p>
-        
-            <div class="readmore">
-                <a href="/2019/03/18/2019-03-18-Quip/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/Quip/"><i class="fas fa-tag fa-fw"></i>&nbsp;Quip</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/03/13/2019-03-13-Community-Cloud/">
-                
-                    Community Cloud相关资料
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-03-13
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>Community Cloud相关资料</p>
-        
-            <div class="readmore">
-                <a href="/2019/03/13/2019-03-13-Community-Cloud/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/Community-Cloud/"><i class="fas fa-tag fa-fw"></i>&nbsp;Community Cloud</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/03/12/2019-03-12-BuildABear-Tracking-App-withLWC/">
-                
-                    利用LWC新建一个Bear-Tracking App
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-03-12
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>Build a Bear-Tracking App with Lightning Web Components</p>
-        
-            <div class="readmore">
-                <a href="/2019/03/12/2019-03-12-BuildABear-Tracking-App-withLWC/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/LWC/"><i class="fas fa-tag fa-fw"></i>&nbsp;LWC</a>
-                
-                    <a href="/tags/Lightning-Web-Components/"><i class="fas fa-tag fa-fw"></i>&nbsp;Lightning Web Components</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/03/07/2019-03-07-Get_Start_SFDC/">
-                
-                    Salesforce入门资源
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-03-07
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>Hands-on introduction to Salesforce</p>
-        
-            <div class="readmore">
-                <a href="/2019/03/07/2019-03-07-Get_Start_SFDC/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/入门/"><i class="fas fa-tag fa-fw"></i>&nbsp;入门</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/02/21/2019-02-21-Lightning-Data-Service-Basics/">
-                
-                    Lightning 的数据服务基础篇
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-02-21
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>Lightning Data Service Basics</p>
-        
-            <div class="readmore">
-                <a href="/2019/02/21/2019-02-21-Lightning-Data-Service-Basics/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/Lightning-Components/"><i class="fas fa-tag fa-fw"></i>&nbsp;Lightning Components</a>
-                
-                    <a href="/tags/开发者II考试/"><i class="fas fa-tag fa-fw"></i>&nbsp;开发者II考试</a>
-                
-                    <a href="/tags/Trailhead/"><i class="fas fa-tag fa-fw"></i>&nbsp;Trailhead</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/02/17/2019-02-17-Lightning-Web-Components-Basics/">
-                
-                    Lightning Web Components入门(二)
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-02-17
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Salesforce/">Salesforce</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>Lightning Web Components Basics：LWC的入门基础篇</p>
-        
-            <div class="readmore">
-                <a href="/2019/02/17/2019-02-17-Lightning-Web-Components-Basics/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Salesforce/"><i class="fas fa-tag fa-fw"></i>&nbsp;Salesforce</a>
-                
-                    <a href="/tags/LWC/"><i class="fas fa-tag fa-fw"></i>&nbsp;LWC</a>
-                
-                    <a href="/tags/Lightning-Web-Components/"><i class="fas fa-tag fa-fw"></i>&nbsp;Lightning Web Components</a>
-                
-                    <a href="/tags/SFDX/"><i class="fas fa-tag fa-fw"></i>&nbsp;SFDX</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-        <div class='post-wrapper'>
-            <article class="post reveal ">
-    <section class="meta">
-        <h2 class="title">
-            <a href="/2019/01/11/2019-01-11-shortcut/">
-                
-                    常用快捷键shortcut收录
-                
-            </a>
-        </h2>
-        <time class="time">
-            <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;2019-01-11
-        </time>
-        
-    
-    <div class='cats'>
-        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
-        <a class="categories" href="/categories/Tools/">Tools</a>
-    </div>
-
-
-    </section>
-
-    <section class="article typo">
-        <p>常用快捷键shortcut收录.</p>
-        
-            <div class="readmore">
-                <a href="/2019/01/11/2019-01-11-shortcut/" class="flat-box">
-                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
-                    阅读全文
-                </a>
-            </div>
-        
-
-        
-            <div class="full-width auto-padding tags">
-                
-                    <a href="/tags/Tools/"><i class="fas fa-tag fa-fw"></i>&nbsp;Tools</a>
-                
-                    <a href="/tags/shortcut/"><i class="fas fa-tag fa-fw"></i>&nbsp;shortcut</a>
-                
-            </div>
-        
-    </section>
-</article>
-
-        </div>
-    
-</section>
-
-
-    <br>
-    <div class="prev-next">
-        <div class="prev-next">
-            
-            <p class="current">
-                1 / 3
-            </p>
-            
-                <a class="next" rel="next" href="/page/2/">
-                    <section class="post next">
-                        &nbsp;下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i>
-                    </section>
-                </a>
-            
-
-        </div>
-    </div>
-
-
-
-        </div>
-        <aside class='l_side'>
-            
-    
-        
-  <section class='m_widget author'>
-    
-      <div class='header'>
-        <img class='avatar' src='https://raw.githubusercontent.com/TonyRenHK/Store_Picture/master/Logo/Me2.jpg'/>
-      </div>
-    
-    
-      <div class='content'>
-        
-          <h2>呆呆&#39;s blog</h2>
-        
-        
-          <p>好学近乎知，力行近乎仁，知耻近乎勇</p>
-        
-      </div>
-    
-    
-      <div class="social-wrapper">
-        
-          
-            <a href="mailto:renchk@foxmail.com" class="social flat-box" target="_blank" rel="external"><i class="social fas fa-envelope" aria-hidden="true"></i></a>
-          
-        
-          
-            <a href="https://github.com/TonyRenHK" class="social flat-box" target="_blank" rel="external"><i class="social fab fa-github" aria-hidden="true"></i></a>
-          
-        
-          
-            <a href="https://www.linkedin.com/in/tony-ren-hk/" class="social flat-box" target="_blank" rel="external"><i class="social fab fa-linkedin" aria-hidden="true"></i></a>
-          
-        
-          
-            <a href="https://www.weibo.com/6476367461" class="social flat-box" target="_blank" rel="external"><i class="social fab fa-weibo" aria-hidden="true"></i></a>
-          
-        
-          
-            <a href="https://www.youtube.com/channel/UCYKaW0KfHSuKw2SpqebLqeQ" class="social flat-box" target="_blank" rel="external"><i class="social fab fa-youtube" aria-hidden="true"></i></a>
-          
-        
-          
-            <a href="https://tonyrenhk.github.io/Wechat/" class="social flat-box" target="_blank" rel="external"><i class="social fab fa-weixin" aria-hidden="true"></i></a>
-          
-        
-      </div>
-    
-  </section>
-
-
-    
-    
-        <section class='m_widget links'>
-    <div class='content pure'>
-        <ul class="entry" id="links">
-            
-                <li>
-                    
-                        <a class="flat-box" title="http://tonyrenhk.github.io/Note/BookMark.html" rel="external nofollow noopener noreferrer" href="http://tonyrenhk.github.io/Note/BookMark.html">
-                    
-                    <div class='name'>
-                        
-                            <img src="https://raw.githubusercontent.com/TonyRenHK/TonyRenHK/master/Image/IMG_2568.JPG">
-                        
-                        &nbsp;&nbsp;书签BookMark
-                    </div>
-                </a></li>
-            
-                <li>
-                    
-                        <a class="flat-box" title="http://tonyrenhk.github.io/Note/OnlineTools.html" rel="external nofollow noopener noreferrer" href="http://tonyrenhk.github.io/Note/OnlineTools.html">
-                    
-                    <div class='name'>
-                        
-                            <img src="http://tonyrenhk.github.io/images/notebook.png">
-                        
-                        &nbsp;&nbsp;工具Tools
-                    </div>
-                </a></li>
-            
-                <li>
-                    
-                        <a class="flat-box" title="http://tonyrenhk.github.io/Note/Tutorial.html" rel="external nofollow noopener noreferrer" href="http://tonyrenhk.github.io/Note/Tutorial.html">
-                    
-                    <div class='name'>
-                        
-                            <img src="https://raw.githubusercontent.com/TonyRenHK/Store_Picture/master/Logo/Astro_Trailblazer_hoodie_wave.png">
-                        
-                        &nbsp;&nbsp;教程Tutorial
-                    </div>
-                </a></li>
-            
-                <li>
-                    
-                        <a class="flat-box" title="http://tonyrenhk.github.io/2018/02/02/2018-02-02-Git-Study/" rel="external nofollow noopener noreferrer" href="http://tonyrenhk.github.io/2018/02/02/2018-02-02-Git-Study/">
-                    
-                    <div class='name'>
-                        
-                            <img src="https://raw.githubusercontent.com/TonyRenHK/Store_Picture/master/Logo/s.png">
-                        
-                        &nbsp;&nbsp;Git
-                    </div>
-                </a></li>
-            
-        </ul>
-    </div>
-</section>
-
-    
-    
-        <section class='m_widget categories'>
-    <header class='header pure'>
-        <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;分类</div>
-    </header>
-    <div class='content pure'>
-        
-            <ul class="entry">
-                
-                    <li><a class="flat-box" href="/categories/Git/"><div class='name'>Git</div><div class='badge'>2</div></a></li>
-                
-                    <li><a class="flat-box" href="/categories/Google/"><div class='name'>Google</div><div class='badge'>2</div></a></li>
-                
-                    <li><a class="flat-box" href="/categories/JS/"><div class='name'>JS</div><div class='badge'>1</div></a></li>
-                
-                    <li><a class="flat-box" href="/categories/JavaScript/"><div class='name'>JavaScript</div><div class='badge'>1</div></a></li>
-                
-                    <li><a class="flat-box" href="/categories/Python/"><div class='name'>Python</div><div class='badge'>1</div></a></li>
-                
-                    <li><a class="flat-box" href="/categories/Salesforce/"><div class='name'>Salesforce</div><div class='badge'>17</div></a></li>
-                
-                    <li><a class="flat-box" href="/categories/Tools/"><div class='name'>Tools</div><div class='badge'>1</div></a></li>
-                
-                    <li><a class="flat-box" href="/categories/hexo/"><div class='name'>hexo</div><div class='badge'>1</div></a></li>
-                
-            </ul>
-        
-    </div>
-</section>
-
-    
-    
-        
-    <section class='m_widget tagcloud'>
-        <header class="header pure">
-            <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;标签</div>
-        </header>
-        <div class='content pure'>
-            <a href="/tags/Apex/" style="font-size: 15.67px; color: #8e8e8e">Apex</a> <a href="/tags/Chrome-Extension/" style="font-size: 14px; color: #999">Chrome-Extension</a> <a href="/tags/Community-Cloud/" style="font-size: 14px; color: #999">Community Cloud</a> <a href="/tags/Demo/" style="font-size: 14px; color: #999">Demo</a> <a href="/tags/Git/" style="font-size: 17.33px; color: #828282">Git</a> <a href="/tags/Google/" style="font-size: 14px; color: #999">Google</a> <a href="/tags/Google-App-Script/" style="font-size: 14px; color: #999">Google App Script</a> <a href="/tags/JavaScript/" style="font-size: 15.67px; color: #8e8e8e">JavaScript</a> <a href="/tags/Jsforce/" style="font-size: 15.67px; color: #8e8e8e">Jsforce</a> <a href="/tags/LWC/" style="font-size: 19px; color: #777">LWC</a> <a href="/tags/Lightning/" style="font-size: 15.67px; color: #8e8e8e">Lightning</a> <a href="/tags/Lightning-Components/" style="font-size: 14px; color: #999">Lightning Components</a> <a href="/tags/Lightning-Web-Components/" style="font-size: 17.33px; color: #828282">Lightning Web Components</a> <a href="/tags/Python/" style="font-size: 14px; color: #999">Python</a> <a href="/tags/Quip/" style="font-size: 14px; color: #999">Quip</a> <a href="/tags/SFDX/" style="font-size: 17.33px; color: #828282">SFDX</a> <a href="/tags/Salesforce/" style="font-size: 24px; color: #555">Salesforce</a> <a href="/tags/Script/" style="font-size: 14px; color: #999">Script</a> <a href="/tags/Superbadge/" style="font-size: 14px; color: #999">Superbadge</a> <a href="/tags/Tools/" style="font-size: 14px; color: #999">Tools</a> <a href="/tags/Trailhead/" style="font-size: 22.33px; color: #606060">Trailhead</a> <a href="/tags/hexo/" style="font-size: 14px; color: #999">hexo</a> <a href="/tags/hexo-theme-doc/" style="font-size: 14px; color: #999">hexo-theme-doc</a> <a href="/tags/jQuery/" style="font-size: 14px; color: #999">jQuery</a> <a href="/tags/metadata/" style="font-size: 14px; color: #999">metadata</a> <a href="/tags/shortcut/" style="font-size: 14px; color: #999">shortcut</a> <a href="/tags/入门/" style="font-size: 14px; color: #999">入门</a> <a href="/tags/对Campaign/" style="font-size: 14px; color: #999">对Campaign</a> <a href="/tags/开发者II考试/" style="font-size: 20.67px; color: #6c6c6c">开发者II考试</a> <a href="/tags/自动/" style="font-size: 14px; color: #999">自动</a>
-        </div>
-    </section>
-
-
-    
-    
-        
-
-    
-    
-        <section class='m_widget links'>
-    <header class='header pure'>
-        <div><i class="fas fa-link fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;更多</div>
-        
-            <a class="rightBtn" title="联系博主添加友链" target="_blank" rel="external nofollow noopener noreferrer" href="mailto:me@xaoxuu.com?subject=交换友链&body=你好，我想和你交换友链，我已经将【呆呆&#39;s blog】添加到我的博客的友链中。我的博客链接是："><i class="fas fa-plus fa-fw"></i></a>
-        
-    </header>
-    <div class='content pure'>
-        <ul class="entry" id="links">
-            
-                <li>
-                    
-                        <a class="flat-box" title="https://xaoxuu.com/blog" target="_blank" rel="external nofollow noopener noreferrer" href="https://xaoxuu.com/blog">
-                    
-                        
-                    
-                        
-                    <div class='name'>
-                        
-                            <img src="https://cdn.jsdelivr.net/gh/xaoxuu/assets@master/favicon/favicons/favicon-32x32.png">
-                        
-                        &nbsp;&nbsp;xaoxuu&#39;s blog
-                    </div>
-                </a></li>
-            
-                <li>
-                    
-                        <a class="flat-box" title="https://www.wushile.top/" target="_blank" rel="external nofollow noopener noreferrer" href="https://www.wushile.top/">
-                    
-                        
-                    
-                        
-                    <div class='name'>
-                        
-                            <img src="https://img.vim-cn.com/44/a0e41f98005881db95c69540bd44141135d005.png">
-                        
-                        &nbsp;&nbsp;小吴博客
-                    </div>
-                </a></li>
-            
-        </ul>
-    </div>
-</section>
-
-    
-
-
-        </aside>
-        <script>setLoadingBarProgress(60);</script>
-    </div>
-    </div>
-    <footer id="footer" class="clearfix">
-    
-        <div class="social-wrapper">
-          
-              
-                  <a href="mailto:renchk@foxmail.com" class="social fas fa-envelope flat-box" target="_blank" rel="external"></a>
-              
-          
-              
-                  <a href="https://github.com/TonyRenHK" class="social fab fa-github flat-box" target="_blank" rel="external"></a>
-              
-          
-              
-                  <a href="https://www.linkedin.com/in/tony-ren-hk/" class="social fab fa-linkedin flat-box" target="_blank" rel="external"></a>
-              
-          
-              
-                  <a href="https://www.weibo.com/6476367461" class="social fab fa-weibo flat-box" target="_blank" rel="external"></a>
-              
-          
-              
-                  <a href="https://www.youtube.com/channel/UCYKaW0KfHSuKw2SpqebLqeQ" class="social fab fa-youtube flat-box" target="_blank" rel="external"></a>
-              
-          
-              
-                  <a href="https://tonyrenhk.github.io/Wechat/" class="social fab fa-weixin flat-box" target="_blank" rel="external"></a>
-              
-          
-        </div>
-    
-    <br>
-    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
-    <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，
-		总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
-    </div>
-    
-<span id="runtime_span"></span>
-
-<script type="text/javascript">
-function show_runtime(){
-  window.setTimeout("show_runtime()",1000);
-  X=new Date("8/22/2016 18:27:0");
-  Y=new Date();T=(Y.getTime()-X.getTime());M=24*60*60*1000;
-  a=T/M;A=Math.floor(a);
-  b=(a-A)*24;B=Math.floor(b);
-  c=(b-B)*60;C=Math.floor((b-B)*60);
-  D=Math.floor((c-C)*60);
-  runtime_span.innerHTML="—— 本站已稳定运行： "+A+"天"+B+"小时"+C+"分"+D+"秒 ——"}show_runtime();
+<div id="mobileSearchContainerOverlay"></div>
+<div class="navbar navbar-static-top">
+<div class="navbar-inner">
+<div class="container">
+<div class="mobileHeaderContainer">
+<a class="brand clearfix" href="/"><img src="/resources2/images/salesforce-header-logo.png" class="sewg314"/></a>
+<div class="headerButtonsContainer">
+<div class="spanButton clearfix pull-right">
+<a class="btn btn-success" type="button" href="/signup?d=70130000000td6N">
+サインアップ &rsaquo;								</a>
+</div>
+<div style="position: relative;" class="spanButton clearfix pull-right">
+<BUTTON id="login-button" class="btn btn-primary" type="button">
+ログイン &rsaquo;								</BUTTON>
+<div id="user-info-container" style="display: none;">
+<div id="user-info-content">
+<div id="user-info-header" class="clearfix">
+<div id="user-info-picture">
+&nbsp;											</div>
+<div id="user-info-text-container">
+<div id="user-info-name">
+&nbsp;												</div>
+<div id="user-info-username">
+&nbsp;												</div>
+<div class="clearfix">
+&nbsp;												</div>
+</div>
+</div>
+<div id="user-info-profile">
+<ul class="unstyled">
+<li id="MyDeveloperAcc">
+<a>
+My Developer Account >													</a>
+</li>
+<li id="CreateNewAcc">
+<a>
+アカウントを作成 >													</a>
+</li>
+<li id="MySettings">
+<a>
+私の設定 >													</a>
+</li>
+</ul>
+</div>
+<button id="user-info-logout" onclick="javascript:void(0);">
+ログアウト										</button>
+</div>
+</div>
+</div>
+</div>
+<div class="social-search clearfix pull-right"><form class='search-form'>
+<input id="st-search-input" type="text" class='st-default-search-input stype-input' placeholder='サーチ'/></form>
+<button type='submit' class="header-st-search-button slds-is-absolute"></button>
+</div>
+
+
+
+<div style="height: auto;" class="nav-collapse in collapse">
+<ul id="nav-to-highlight-based-on-url2" class="nav primary-nav">
+
+
+
+
+<li class="dropdown">
+<a data-toggle="dropdown" href="/platform/overview">
+プロダクト									</a>
+<ul class="dropdown-menu library menu-item-medium">
+<li style='overflow:hidden;'>
+<div class='pull-left span' style='width:190px;'>
+<p>
+<em>Platform</em>
+</p>
+<ul class='unstyled' style='float:left;'>
+<li class='spaced-item'><a class="medium-link" href="/platform">Platform 概要</a></li>
+<li class="spaced-item"><a class="medium-link" href="/platform/appexchange">AppExchange</a></li>
+<li class="spaced-item"><a class="medium-link" href="/force-com">Lightning Platform</a></li>
+<li class="spaced-item"><a class="medium-link" href="/product-mulesoft">MuleSoft Anypoint</a></li>
+<li class="spaced-item"><a class="medium-link" href="/product-heroku">Heroku</a></li>
+<li class="spaced-item"><a class="medium-link" href="/mobile">Mobile</a></li>
+</ul>
+</div>
+<div class='pull-left span' style='width:200px;'>
+<p><em>Salesforce Apps</em></p>
+<ul class='unstyled' style='float:left;'>
+
+<li class='spaced-item'> <a class='medium-link' href='/einstein-analytics'>Einstein Analytics</a> </li>
+<li class='spaced-item'> <a class='medium-link' href='https://help.salesforce.com/articleView?id=networks_resources.htm&language=en_US'>Community Cloud</a> </li>
+<li class='spaced-item'> <a class='medium-link' href='https://developer.salesforce.com/devcenter/marketing-cloud'>Marketing Cloud</a> </li>
+<li class='spaced-item'> <a class='medium-link' href='http://developer.pardot.com/'>Pardot</a> </li>
+<li class='spaced-item'> <a class='medium-link' href='https://salesforce.quip.com/api/'>Quip</a> </li>
+</ul>
+</div>
+<div class='pull-left span' style='width:85%'>
+<p><em>Build Faster, Smarter & Together</em></p>
+<ul class='unstyled' style='width:50%; float:left;'>
+<li class='spaced-item'> <a class='medium-link' href='/identity'>Identity</a> </li>
+<li class='spaced-item'> <a class='medium-link' href='/lightning'>Lightning</a> </li>
+<li class='spaced-item'> <a class='medium-link' href='/einstein'>Einstein</a> </li>
+<li class='spaced-item'> <a class='medium-link' href='/platform/dx'>Salesforce DX</a> </li>
+</ul>
+</div>
+</li>
+<div class='menu-image'>
+<a class='menu-image-link' href='https://trailhead.salesforce.com/'><img src='https://res.cloudinary.com/hy4kyit2a/image/upload/learn-with-trailhead_1.png'></img></a>
+</div>
+</ul>
+
+</li>
+
+
+
+
+<li class="dropdown">
+<a data-toggle="dropdown" href="/resources">
+リソース									</a>
+<ul class="dropdown-menu library menu-item-large">
+<li style="overflow:hidden;">
+<div style="width:225px;" class="pull-left span">
+<p><em>学ぶ</em></p>
+<ul style="width:50.0%;float:left;" class="unstyled">
+<li class="spaced-item">
+<A class="medium-link" href="/gettingstarted">
+入門														</A>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/docs">
+ドキュメント														</a>
+</li>
+
+<li class="spaced-item">
+<a class="medium-link" href="/trailhead">
+Trailhead														</a>
+</li>
+<li class="spaced-item">
+    <a class="medium-link" href="https://developer.salesforce.com/tv/lwc-video-gallery">
+Lightning Components Videos</a>
+</li>
+<li class="spaced-item">
+    <a class="medium-link" href="https://developer.salesforce.com/tv/">
+Developer Video Gallery</a>
+</li>
+<li class="spaced-item">
+    <a class="medium-link" href="https://trailhead.salesforce.com/sample-gallery">
+Sample Gallery			</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/content/type/Webinar">
+Webセミナー														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://www.salesforce.com/jp/services-training/training_certification/
+" target="_blank">
+トレーニング & 認定資格														</a>
+</li>
+</ul>
+</div>
+<div style="width:256px;" class="pull-left span">
+<p>
+<em>ツール</em>												</p>
+<ul style="width:50.0%;float:left;" class="unstyled">
+
+<li class="spaced-item medium-link">
+<a href="https://developer.salesforce.com/docs/api-explorer">
+API Explorer
+</a>
+</li>  
+<li class="spaced-item medium-link">
+<a href="/tools/extension_vscode">
+Salesforce extensions for VS Code
+</a>
+</li>
+<li class="spaced-item medium-link">
+<a href="/tools/sfdxcli">
+Salesforce CLI
+</a>
+</li>
+<li class="spaced-item medium-link">
+<a href="https://www.lightningdesignsystem.com/" target="_blank">
+Lightning Design System	<i class="icon-external-link"></i>													</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/page/Security_Tools">
+セキュリティツール														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/tools">
+その他のツール</a>
+</li>
+<li class="spaced-item">
+  <a class="medium-link" href="https://developer.salesforce.com/docs/component-library">コンポーネントライブラリ</a>
+</li>
+</ul>
+</div>
+<div class="pull-left span">
+<p>
+<em>トピック別</em>
+</p>
+<ul style="width:50.0%;float:left;" class="unstyled">
+<li class="spaced-item medium-link">
+<a href="https://developer.salesforce.com/docs/atlas.ja-jp.sfdx_dev.meta/sfdx_dev/sfdx_dev_develop.htm">
+アプリケーションの配布														</a>
+</li>
+<li class="spaced-item medium-link">
+<a href="/page/App_Logic">
+アプリケーションロジック														</a>
+<li class="spaced-item medium-link">
+<a href="/page/Architect_Core_Resources">
+アーキテクト															</a>
+</li>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/developer-centers/community-cloud">
+Community Cloud														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/page/Database">
+データベース														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/devcenter/lightning">
+Lightning														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/devcenter/mobile">
+モバイル														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/page/Integration">
+インテグレーション														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/page/Security">
+セキュリティ														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/page/UserInterface">
+ユーザーインターフェース														</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/page/Websites">
+ウェブサイト														</a>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a data-toggle="dropdown" href="">コミュニティ</a>
+<ul class="dropdown-menu">
+<li class="spaced-item">
+<a class="medium-link" href="https://trailblazer.salesforce.com/">Trailblazer Community</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailblazer.salesforce.com/0F9300000001oWJ">開発者Chatterグループ</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/calendar">イベントカレンダー</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://www.trailblazers.jp/" target="_blank">コミュニティ主催イベント <i class="icon-external-link"></i> </a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="/mvp">Salesforce MVP</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailblazercommunitygroups.com/?&utm_source=developer&utm_medium=web-banner&utm_campaign=community_groups&utm_content=devs" target="_blank">日本の開発者グループ <i class="icon-external-link"></i></a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="http://www.meetup.com/pro/salesforcedevs" target="_blank">世界の開発者グループ</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailhead.salesforce.com/trailblazers?#role-dev">開発者サクセスストーリー</a>
+</li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="https://developer.salesforce.com/jpblogs/">ブログ</a>
+</li>
+<li class="dropdown">
+<a data-toggle="dropdown" href="https://trailhead.salesforce.com">
+Trailhead									</a>
+<ul class="dropdown-menu">
+<li class="spaced-item">
+<a class="medium-link" href="https://trailhead.salesforce.com">
+Trailhead											</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailhead.salesforce.com/trails">
+-トレイル											</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailhead.salesforce.com/modules">
+- モジュール											</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailhead.salesforce.com/projects">
+- プロジェクト											</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailhead.salesforce.com/super_badges">
+- Superbadges											</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailhead.salesforce.com/trailblazers">
+- Trailblazers											</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://developer.salesforce.com/forums?communityId=09aF00000004HMGIA2#!/feedtype=RECENT&amp;dc=Trailhead&amp;criteria=ALLQUESTIONS" target="_blank">
+ヘルプ											</a>
+</li>
+<li class="spaced-item">
+<a class="medium-link" href="https://trailblazer.salesforce.com/0F93A000000Pcn2SAC" target="_blank">コミュニティに参加</a>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="mobile mobileHeader">
+<a id="mobileMenu">
+<img src="https:/developer.salesforce.com/resource/images/MenuMobile.png"/> 						</a>
+<a class="mobileLogo" href="/">
+<img src="https://developer.salesforce.com/resource/images/salesforce-developer-network-logo_1.png" class="sewg314" style="width:118px;"/> 						</a>
+<a id="mobileSearch">
+<img src="https://developer.salesforce.com/resource/images/SearchMobile.png"/> 						</a>
+</div>
+</div>
+</div>
+</div>
+<script src="https://developer.salesforce.com/resource/javascripts/afterheader.min.js"></script>
+
+<script>
+function call_campaigns_cookie(){
+var params = document.location.search.substring(1);
+var utm_source = '';
+var utm_medium = '';
+var utm_campaign = '';
+var dr = '';
+params_array = params.split('&');
+for(i=0;i<params_array.length;i++){
+param_array = params_array[i].split('=');
+if(param_array[0]=='utm_source'){
+utm_source = param_array[1];
+}else if(param_array[0]=='utm_medium'){
+utm_medium = param_array[1];
+}else if(param_array[0]=='utm_campaign'){
+utm_campaign = param_array[1];
+}else if(param_array[0]=='dr'){
+dr = param_array[1];
+}
+}
+
+if(utm_source!=null && utm_source!='' &&
+utm_medium!=null && utm_medium!='' &&
+utm_campaign!=null && utm_campaign!=''){
+//do call
+$.get( "/events/campaigns_cookie", { utm_source: utm_source, utm_medium: utm_medium, utm_campaign: utm_campaign, dr: dr } );
+}
+}
+function animateSearchIn() {
+$('#mobileSearchContainerOverlay').fadeIn();
+$('#mobileSearchContainer').fadeIn();
+$('#st-search-input-mobile').focus();
+$("#mobileSearchContainer .searchBar").animate({
+top: '0px',
+}, 500, function() {
+
+$("#mobileSearchContainer .searchBar").animate({
+top: '-20px',
+}, 300);
+
+});
+}
+
+function animateSearchOut() {
+$("#mobileSearchContainer .searchBar").animate({
+top: '0px',
+}, 300, function() {
+$("#mobileSearchContainer .searchBar").animate({
+top: '-80px',
+}, 500, function() {
+$('#mobileSearchContainer').fadeOut();
+$('#mobileSearchContainerOverlay').fadeOut();
+$('#st-search-input-mobile').val('');
+});
+});
+}
+function swiftypeSearch(){
+$('.search-form').submit(function(event){
+event.preventDefault();
+var query = encodeURIComponent($(this).find('input').val());
+animateSearchOut();
+//window.location = '/stype-search#stq=' + query;
+window.location = 'https://go.pardot.com/s/27572/bZmGraVP6uMckd2zJnklMehlfDezI7wZ?/%23stq=' + query;
+});
+$('.header-st-search-button').click(function(){
+$('.search-form').submit();
+});
+$('#mobileSearch').unbind('click');
+
+$('#mobileSearch').click(function(){
+animateSearchIn();
+});
+$('#mobileSearchContainerOverlay, .clear-button').click(function(){
+animateSearchOut();
+});
+$('#st-search-input-mobile').after($("<button type='submit' class='header-st-search-button-left'></button>"));
+
+}
+
+function mobileSidebarFix(){
+if( $('body').width() <= 979 ){
+$('.mobileHeaderContainer').addClass('on-mobile');
+}else{
+$('.mobileHeaderContainer').removeClass('on-mobile');
+}
+}
+
+var hideMobileHeaderContainer = true;
+
+
+$(document).ready(function(){
+
+/*!
+* jquery.scrollto.js 0.0.1 - https://github.com/yckart/jquery.scrollto.js
+* Scroll smooth to any element in your DOM.
+*
+* Copyright (c) 2012 Yannick Albert (http://yckart.com)
+* Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php).
+* 2013/02/17
+**/
+$.scrollTo = $.fn.scrollTo = function(x, y, options){
+if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+
+options = $.extend({}, {
+gap: {
+x: 0,
+y: 1
+},
+animation: {
+easing: 'swing',
+duration: 600,
+complete: $.noop,
+step: $.noop
+}
+}, options);
+
+return this.each(function(){
+var elem = $(this);
+elem.stop().animate({
+scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
+}, options.animation);
+});
+};
+swiftypeSearch();
+mobileSidebarFix();
+
+
+$(window).scroll(function() {
+
+if( hideMobileHeaderContainer == true && $(window).scrollLeft() > ($('.mobileHeaderContainer').outerWidth()/2) ){ 
+hideMobileHeaderContainer = false;
+
+setTimeout(function(){hideMobileHeaderContainer=true;}, 600);
+//$('html,body').scrollTo(0, 0, function(){});
+$('header').removeClass('showMobile');
+$('#SDNmaintemplate').removeClass('showMobile');
+$('footer').removeClass('showMobile');
+}
+});
+
+$(window).resize(function(){
+mobileSidebarFix();
+});
+call_campaigns_cookie();
+});
 
 </script>
 
+<link href='https://developer.salesforce.com/resources2/stylesheets/dsc-header.css' rel='stylesheet' type='text/css'/>
 
-</footer>
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+<!--</dfc-header>-->
+																																																																			</header><!-- header -->
 
+<!--<dfc-nav>-->
+<div id="navigation-bar" data-swiftype-index="false">
+<div class="container">
+  <div class="row">
+    <div class="span9">
+      <div>
+        <div class="hidden <dfc-show-breadcrumb/>">
+          <dfc-breadcumbs/>
+        </div>
+        <h1 class="<dfc-no-breadcrumb/>"><dfc-nav-title/></h1>
+      </div>
+    </div>
+    <div class="span3">
+      <div>
+        <div id="discussion_board_socialData">
+          <div id="forums_social_wrapper" class="forums_social_wrapper">
+            <!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <div class="addthis_custom_sharing"></div>
+            <!-- AddThis Button END -->
+            <div class="clear_both"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--</dfc-nav>-->
+<!-- outside nav area-->
+<div ng-app='DocsApp'>
+<div ui-view=''></div>
+</div>
 
-    <script>setLoadingBarProgress(80);</script>
-    <script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src='//cdn.bootcss.com/node-waves/0.7.5/waves.min.js'></script>
-<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
-<!-- 访问统计 -->
-<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<!-- Go to www.addthis.com/dashboard to customize your tools -->
-<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bfb78723c9c4600"></script>
+<!--<dfc-footer>-->
+  <footer data-swiftype-index='false'>
+		<div class="footer-top">
+			<div class="container">
+				<div class="row small">
+					<div class="footerCols1">
+						<h3>
+始めよう						</h3>
+						<ul class="unstyled">
+							<li>
+								<a href="/platform">
+Salesforce Platform								</a>
+							</li>
+							<li>
+								<a href="/gettingstarted">
+Lightning Platform								</a>
+							</li>
+							<li>
+								<a href="https://devcenter.heroku.com/start">
+Heroku								</a>
+							</li>
+              <li>
+								<a href="https://developer.mulesoft.com/tutorials-and-how-tos">MuleSoft クイックスタートガイド</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footerCols1">
+						<h3>
+Salesforce 開発センター						</h3>
+						<ul class="unstyled">
+							<li>
+								<a href="/devcenter/lightning">
+Lightning Developer Center								</a>
+							</li>
+							<li>
+								<a href="/devcenter/mobile">
+Mobile Developer Center								</a>
+							</li>
+							<li>
+								<a href="http://devcenter.heroku.com/">
+Heroku 開発センター								</a>
+							</li>
+							<li>
+								<a href="http://dev.desk.com/">
+Desk.com &lt;/developers&gt;								</a>
+							</li>
+							<li>
+								<a href="http://developer.pardot.com/">
+Pardot 開発者サイト								</a>
+							</li>
+							<li>
+              								<a href="http://developer.mulesoft.com/">MuleSoft 開発者サイト</a>
+              							</li>
+						</ul>
+					</div>
+					<div class="footerCols1">
+						<h3>
+開発者リソース						</h3>
+						<ul class="unstyled">
+							<li>
+								<a href="/mobile">
+モバイルサービス								</a>
+							</li>
+							<li>
+								<a href="/docs/?service=Force.com&amp;sort=title">
+Lightning Platform ドキュメント								</a>
+							</li>
+							<li>
+								<a href="/page/Tools">
+Lightning Platform ダウンロード								</a>
+							</li>
+							<li>
+								<a href="http://toolbelt.heroku.com/">
+Heroku ダウンロード								</a>
+							</li>
+							<li>
+								<a href="/trailhead?utm_campaign=trailhead&amp;utm_source=website&amp;utm_medium=dsc_footer">
+Learn Salesforce with Trailhead								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footerCols1">
+						<h3>
+コミュニティ						</h3>
+						<ul class="unstyled">
+						  <li>
+								<a href="https://trailblazercommunitygroups.com/?&utm_source=developer&utm_medium=web-banner&utm_campaign=community_groups&utm_content=devs">
+Developer Community Groups								</a>
+							</li>
+							<li>
+								<a href="/forums?communityId=09aF00000004HT8IAM">
+開発者フォーラム								</a>
+							</li>
+							<li>
+								<a href="/calendar">
+Salesforce 開発者イベント								</a>
+							</li>
+							<li>
+								<a href="/content/type/Webinar">
+Web セミナー								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="footerCols1">
+						<h3>
+詳細はこちら						</h3>
+						<ul class="unstyled">
+							<li>
+								<a href="/appexchange">
+Salesforce AppExchange								</a>
+							</li>
+							<li>
+								<a href="//admin.salesforce.com">Salesforce Administrator</a>
+							</li>
+							<li>
+								<a href="//help.salesforce.com/">
+Salesforce.com ヘルプポータル								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="span9">
+<!--<dfc-footer-copyright>-->						<span class="footer-copyright">
+© Copyright 2000-2019 salesforce.com, inc.All rights reserved.本サイトに記載された商標は、各商標所有者に帰属します。<br>Salesforce.com, inc. The Landmark @ One Market, Suite 300, San Francisco, CA 94105, United States						</span>
+<!--</dfc-footer-copyright>-->						<div class="footer-links small">
+							<a href="//www.salesforce.com/jp/company/privacy/">
+個人情報の取り扱いについて							</a>
+							<a href="//www.salesforce.com/company/security.jsp">
+セキュリティについて							</a>
+							<a href="https://trailblazer.me/terms?lan=ja">
+利用規約							</a>
+                        <span>
+                              <!-- OneTrust Cookies Settings button start -->
+                              <button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie の設定</button>
+                              <!-- OneTrust Cookies Settings button end -->
+                            </span>
+							<a class="feedback" href="#" itemid="ebd396c9-3b7c-43bd-8223-419bc8a1cbeb">
+<img src="/resource/images/opinionlab-orange.gif" alt="Feedback">フィードバック							</a>
+							<a href="//www.salesforce.com/jp/company/about-us/">
+お問い合わせ							</a>
+							<a class="language-switcher" href="javascript:void(0);">
+言語:								<span class="current-language">
+日本語									</span>
+							</a>
+							<div class="language-switcher-popup hidden">
+								<h4 class="language-popup-title">
+言語を選択								</h4>
+								<ul class="unstyled language-list">
+									<li class="" data-language="en">
+English									</li>
+									<li data-language="ja" class="active">
+日本語									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="span3">
+						<ul class="social-icons unstyled">
+							<li>
+								<a href="https://www.facebook.com/salesforcedevs">
+<img src="/resource/images/facebook.png">								</a>
+							</li>
+							<li>
+								<a href="https://twitter.com/#!/salesforcedevs">
+<img src="/resource/images/twitter.png">								</a>
+							</li>
+							<li>
+								<a href="https://plus.google.com/118327959233932983591">
+<img src="/resource/images/g.png">								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/groups/Developer-Force-Forcecom-Community-3774731">
+<img src="/resource/images/linkedIn.png">								</a>
+							</li>
+							<li>
+								<a href="https://www.youtube.com/user/DeveloperForce">
+<img src="/resource/images/youTube.png">								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+<script type="text/javascript" src="https://developer.salesforce.com/resource/javascripts/footerbottom.min.js"></script>
+<script type="text/javascript" src="htts://developer.salesforce.com/resource/javascripts/addthisconfig.min.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5329fb0d17e1f4da"></script>
+<!--</dfc-footer>-->
 
+<script src='//res.cloudinary.com/hy4kyit2a/raw/upload/misc.js' type='text/javascript'></script>
+<script src='//res.cloudinary.com/hy4kyit2a/raw/upload/clippy.js' type='text/javascript'></script>
+<script src='//res.cloudinary.com/hy4kyit2a/raw/upload/swfobject.js' type='text/javascript'></script>
 
-<script src="/js/jquery.fitvids.js"></script>
+    <link rel="stylesheet" type="text/css" href="/resources2/stylesheets/dsc-default-font.css?sv=16"/>
+<script>
+    $( document ).ready(function() {
+        // Disables the index dropdown if it's not force.com
+        $('#select_subject').change(function() {
+            if (($(this).val().indexOf('Force.com') != -1) || ($(this).val().indexOf('All Services') != -1)){
+            	$('#select_type').prop('disabled',false);
+        	} else {
+        		$('#select_type').prop('disabled',true);
+        	}
+        });
+        var percent = 0.40;
+        var add_width = (percent*window.innerHeight);
+        $("#open-console_btn").toggle(function(){
+            $("#open-console_btn").text('x');
+            $('#api-console').attr('scrolling','yes');
+            $('#api-console').animate({height: add_width},200);
+        },function(){
+            $("#open-console_btn").text('+');
+            $('#api-console').attr('scrolling','no');
+            $('#api-console').animate({height: 40 },200);
+        });
+        changeTocIconState();
+        highlightToc();
+        call_campaigns_cookie();
+    });
+        function call_campaigns_cookie(){
+            var params = document.location.search.substring(1);
+        	var utm_source = '';
+        	var utm_medium = '';
+        	var utm_campaign = '';
+        	var dr = '';
+        	params_array = params.split('&');
+        	for(i=0;i<params_array.length;i++){
+        		param_array = params_array[i].split('=');
+        		if(param_array[0]=='utm_source'){
+        			utm_source = param_array[1];
+        		}else if(param_array[0]=='utm_medium'){
+        			utm_medium = param_array[1];
+        		}else if(param_array[0]=='utm_campaign'){
+        			utm_campaign = param_array[1];
+        		}else if(param_array[0]=='dr'){
+        			dr = param_array[1];
+        		}
+        	}
 
-    <script>
-        var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
-        var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
-        var ALGOLIA_API_KEY = "";
-        var ALGOLIA_APP_ID = "";
-        var ALGOLIA_INDEX_NAME = "";
-        var AZURE_SERVICE_NAME = "";
-        var AZURE_INDEX_NAME = "";
-        var AZURE_QUERY_KEY = "";
-        var BAIDU_API_ID = "";
-        var SEARCH_SERVICE = "hexo" || "hexo";
-        var ROOT = "/"||"/";
-        if(!ROOT.endsWith('/'))ROOT += '/';
+        	if(utm_source!=null && utm_source!='' &&
+        		utm_medium!=null && utm_medium!='' &&
+        		utm_campaign!=null && utm_campaign!=''){
+        		//do call
+        		$.get( "/events/campaigns_cookie", { utm_source: utm_source, utm_medium: utm_medium, utm_campaign: utm_campaign, dr: dr } );
+        	}
+        }
+        function highlightToc(){
+            var lastSlashIndex = location.pathname.lastIndexOf("/");
+            var lastSlash = lastSlashIndex + 1;
+            var pageURL = location.pathname.substr(lastSlash);
+            var pageName = pageURL.substr(0, pageURL.lastIndexOf("."));
+            var pageHash = location.hash;
+            if(pageHash!=undefined && pageHash!=''){
+                var foundLi = $("#toc a[href$='" + pageHash + "']");
+                if(foundLi!=undefined && foundLi!='' && foundLi.length>0){
+                    $("#toc a[href$='" + pageHash + "']").parent("div").toggleClass('active');
+                    $("#toc a[href$='" + pageHash + "']").parents('div.collapse').collapse('show');
+                }else{
+                    $("#toc a[href$='" + pageHash.substring(1, pageHash.length) + '.htm' + "']").parent("div").toggleClass('active');
+                    $("#toc a[href$='" + pageHash.substring(1, pageHash.length) + '.htm' + "']").parents('div.collapse').collapse('show');
+                }
+            }else{
+                if( pageName != undefined && pageName != ''){
+                    var foundLi = $("div#" + pageName);
+                    if(location.search==undefined || location.search==''){
+                        foundLi = $("a[href*='" + pageURL + "']");
+                        $("a[href~='" + pageURL + "']").parent("div").toggleClass('active');
+                        $("a[href~='" + pageURL + "']").parents('div.collapse').collapse('show');
+                    }else{
+                        foundLi = $("a[href*='" + pageURL + location.search + "']");
+                        if(foundLi!=undefined && foundLi!=''){
+                            $("a[href$='" + pageURL + location.search + "']").parent("div").toggleClass('active');
+                            $("a[href$='" + pageURL + location.search + "']").parents('div.collapse').collapse('show');
+                        }else{
+                            $("a[href$='" + pageURL + location.search + pageName + "']").parent("div").toggleClass('active');
+                            $("a[href$='" + pageURL + location.search + pageName + "']").parents('div.collapse').collapse('show');
+                        }
+                    }
+                }else{
+                    $("#toc .toc-level-1:eq(0), .mobile-toc .toc-level-1:eq(0)").addClass("active");
+                }
+            }
+        }
     </script>
+<div class='clear'></div>
+<!--<dfc-metrics>-->
+<script type="text/plain" class="optanon-category-1">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f); })(window,document,'script','dataLayer','GTM-MWZCN8');</script>
 
-<script src="/js/search.js"></script>
-<script src="/js/app.js"></script>
+
+<!-- Commented out advertising cookie as per official email
+<script type="text/plain" class="optanon-category-4">
+// Interaction Studio Tag added to track user behavior
+(function(d,s,b,k) {
+var t=d.createElement(s),
+f=d.getElementsByTagName(s)[0];
+t.id='thxTag';
+t.src=b+'/one/rt/js/one-tag.js?siteKey='+k;
+f.parentNode.insertBefore(t,f);
+})(document,'script','https://na5.thunderhead.com','ONE-Y5GVDCGTF1-4089 (https://na5.thunderhead.com%27%2C%27one-y5gvdcgtf1-4089/)')
+</script>
+-->
 
 
 
-    <script>setLoadingBarProgress(100);</script>
+<!--</dfc-metrics>-->
+
+<div class='clear'></div>
+<div class='clear'></div>
+<div id='hidden'>
+<!-- DfcSite on dfc-site-production: 3.64.03 (production Deployed: 2019-12-30 18:55:13 -0300) -->
+<!-- Rendered at 2020-03-04 02:17:34 +0000 for layout: SDN-Layout updated at 2020-03-03 18:10:15 -0800 -->
+</div>
 </body>
+</html>
